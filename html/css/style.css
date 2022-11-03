@@ -1,0 +1,83 @@
+:root {--burnt_orange: #ec5424;
+    --mid_grey: #7f8081;
+    --dark_grey: #333333;
+    --code_background_color: #e1e1df;
+    --page_background_color: #ffffff;
+    --link_color: #20B5E9;
+    --vistied_link_color: #748cb9;
+    --hover_link_color: #ec5424;
+}
+
+html {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--background_color);
+  
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Ubuntu:wght@300&display=swap", sans-serif;
+    color:var(--mid_grey);
+}
+    h1 {
+    font-size: 50px;
+    text-align: left;
+    margin: 20;
+    padding: 5px 0;
+    color: var(--burnt_orange);
+
+    }
+    
+p, li, ul {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    color:var(--dark_grey);
+    }
+
+ul {
+    list-style-type:square; 
+    line-height:1;
+    }
+
+body {
+    width: 900px;
+    margin: 0 10;
+    padding: 0 20px 20px 20px;
+  }
+
+  a:link {
+    color:var(--link_color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--vistied_link_color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--hover_link_color);
+    background-color: transparent;
+    text-decoration: underline; 
+}
+
+a.active {
+    color:var(--burnt_orange);
+    background-color: transparent;
+    text-decoration: underline; 
+}
+
+.code{
+    color: var(--burnt_orange);
+    font-family:"Ubuntu", Monospace;
+    font-size: 15px;
+    background-color: var(--code_background_color);
+    width: 700px;
+}
+
+
+
+
