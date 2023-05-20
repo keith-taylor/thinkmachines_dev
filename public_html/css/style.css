@@ -1,0 +1,186 @@
+:root {--burnt_orange: #ec5424;
+    --mid_grey: #7f8081;
+    --dark_grey: #454545;
+    --page_background_color: #eeeded;
+    --link_color: #20B5E9;
+    --vistied_link_color: #748cb9;
+    --hover_link_color: #ec5424;
+}
+
+html {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--background_color);
+    margin: 5px 0px 5px 0px;
+  
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Ubuntu:wght@300&display=swap", sans-serif;
+    color:var(--burnt_orange);
+    font-weight: normal;
+}
+    h1 {
+    font-size: 45px;
+    text-align: left;
+    margin: 50px 0px 15px 0px;
+    color: var(--mid_grey);
+    font-weight: bolder
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: left;
+      margin: 40px 0px 10px 0px;
+    }
+
+    h3 {
+      font-size: 25px;
+      text-align: left;
+      margin: 30px 0px 5px 0px;
+    }
+
+    h4 {
+      font-size: 18px;
+      text-align: left;
+      margin: 25px 0px 5px 0px;
+    }
+    
+p, li, ul {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    color:var(--dark_grey);
+    }
+
+ul {
+    list-style-type:square; 
+    line-height:1;
+    }
+
+body {
+    width: 900px;
+    margin: 0 10;
+    padding: 0 20px 0px 20px;
+  }
+
+  a:link {
+    color:var(--link_color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--vistied_link_color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--hover_link_color);
+    background-color: transparent;
+    text-decoration: underline; 
+}
+
+a.active {
+    color:var(--burnt_orange);
+    background-color: transparent;
+    text-decoration: underline; 
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* Style the TOP navigation bar */
+.top_bar {
+    width: 100%;
+    background-color: var(--dark_grey);
+    overflow: hidden;
+  }
+  
+  /* Navbar links */
+  .top_bar a {
+    display:table-cell; 
+    vertical-align:middle;
+    text-align: left;
+    padding: 20px 10px 20px 10px;
+    color: var(--page_background_color);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .top_bar p {
+    display:table-cell; 
+    vertical-align:middle;
+    text-align: left;
+    padding: 20px 10px 20px 10px;
+    color: var(--burnt_orange);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .top_bar p:hover {
+    background-color: var(--dark_grey);
+  }
+  
+
+  /* Navbar links on mouse-over */
+  .top_bar a:hover {
+    background-color: var(--burnt_orange);
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .top_bar a {
+      float: none;
+      display: block;
+    }
+  }
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* Style the BOTTOM navigation bar */
+.bottom_bar {
+    width: 100%;
+    background-color: var(--burnt_orange);
+    overflow: auto;
+    margin: 15px 0px 15px 0px;
+  }
+  
+  /* Navbar links */
+  .bottom_bar a {
+    float: left;
+    text-align: center;
+    vertical-align:top;
+    padding: 15px 25px 15px 25px;
+    color: var(--page_background_color);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .bottom_bar a:hover {
+    background-color: var(--dark_grey);
+  }
+  
+  /* Navbar links on mouse-over */
+  .bottom_bar a:inactive {
+    background-color: var(--burnt_orange);
+  }
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .bottom_bar a {
+      float: none;
+      display: block;
+    }
+  }
